@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lunarconsultancy</groupId>
+    <artifactId>jira-wallboard</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Jira Wallboard</name>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven-clean-plugin.version>2.6.1</maven-clean-plugin.version>
+    </properties>
+
+    <modules>
+        <module>frontend</module>
+        <module>mock</module>
+    </modules>
+
+    <ciManagement>
+        <system>Jenkins</system>
+        <url>http://jenkins</url>
+    </ciManagement>
+
+    <scm>
+        <connection>scm:git:ssh://git@stash:7999/lc/jira-wallboard.git</connection>
+        <developerConnection>scm:git:ssh://git@stash:7999/lc/jira-wallboard.git</developerConnection>
+        <url>http://stash/projects/LC/repos/jira-wallboard</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>artifactory</id>
+            <name>artifactory-releases</name>
+            <url>http://artifactory/artifactory/libs-release-local/</url>
+        </repository>
+        <snapshotRepository>
+            <id>artifactory</id>
+            <name>artifactory-releases</name>
+            <url>http://artifactory/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

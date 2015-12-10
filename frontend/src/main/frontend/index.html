@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jira Wallboard</title>
+    <meta name="description" content="Jira Wallboard">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../../../bower_components/angular-chart.js/dist/angular-chart.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <!--suppress HtmlUnknownTarget -->
+    <link rel="stylesheet" href="styles/jira-wallboard.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="jiraWallboardApp" class="display-flex">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve
+    your experience.</p>
+<![endif]-->
+
+<div class="container" ng-view=""></div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../../../bower_components/angular/angular.js"></script>
+<script src="../../../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../../../bower_components/angular-aria/angular-aria.js"></script>
+<script src="../../../bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="../../../bower_components/angular-messages/angular-messages.js"></script>
+<script src="../../../bower_components/angular-resource/angular-resource.js"></script>
+<script src="../../../bower_components/angular-route/angular-route.js"></script>
+<script src="../../../bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="../../../bower_components/angular-touch/angular-touch.js"></script>
+<script src="../../../bower_components/moment/moment.js"></script>
+<script src="../../../bower_components/angular-moment/angular-moment.js"></script>
+<script src="../../../bower_components/angular-base64/angular-base64.js"></script>
+<script src="../../../bower_components/Chart.js/Chart.js"></script>
+<script src="../../../bower_components/angular-chart.js/dist/angular-chart.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/scripts.js -->
+<script src="scripts/momentjs-extensions.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/config.js"></script>
+<script src="scripts/cookie-config.js"></script>
+<script src="scripts/http-config.js"></script>
+<script src="scripts/controllers/jira-wallboard.js"></script>
+<script src="scripts/directives/item-bug-directive.js"></script>
+<script src="scripts/directives/item-story-directive.js"></script>
+<script src="scripts/directives/item-sub-task-directive.js"></script>
+<script src="scripts/directives/item-task-directive.js"></script>
+<script src="scripts/directives/pause-toggle-button-directive.js"></script>
+<script src="scripts/directives/sprint-directive.js"></script>
+<script src="scripts/directives/sprint-metrics-directive.js"></script>
+<script src="scripts/directives/sprint-name-directive.js"></script>
+<script src="scripts/directives/sprint-progress-directive.js"></script>
+<script src="scripts/directives/toggle-button-directive.js"></script>
+<script src="scripts/directives/wip-content-row-directive.js"></script>
+<script src="scripts/directives/wip-directive.js"></script>
+<script src="scripts/directives/wip-header-row-directive.js"></script>
+<script src="scripts/directives/wip-footer-row-directive.js"></script>
+<script src="scripts/directives/wip-overview-row-directive.js"></script>
+<script src="scripts/directives/wip-overview-chart-directive.js"></script>
+<script src="scripts/filters/active-sprint-filter.js"></script>
+<script src="scripts/filters/blockers-filter.js"></script>
+<script src="scripts/filters/bugs-filter.js"></script>
+<script src="scripts/filters/ellipsis-filter.js"></script>
+<script src="scripts/filters/flagged-filter.js"></script>
+<script src="scripts/filters/future-sprint-filter.js"></script>
+<script src="scripts/filters/id-filter.js"></script>
+<script src="scripts/filters/if-empty-filter.js"></script>
+<script src="scripts/filters/not-on-hold-filter.js"></script>
+<script src="scripts/filters/on-hold-filter.js"></script>
+<script src="scripts/filters/status-filter.js"></script>
+<script src="scripts/filters/stories-filter.js"></script>
+<script src="scripts/filters/sub-tasks-filter.js"></script>
+<script src="scripts/filters/tasks-filter.js"></script>
+<script src="scripts/services/issue-service.js"></script>
+<script src="scripts/services/json-service.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "jira-wallboard",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-animate": "latest",
+    "angular-aria": "latest",
+    "angular-cookies": "latest",
+    "angular-messages": "latest",
+    "angular-resource": "latest",
+    "angular-route": "latest",
+    "angular-sanitize": "latest",
+    "angular-touch": "latest",
+    "angular-moment": "latest",
+    "angular-base64": "latest",
+    "angular-chart.js": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest"
+  },
+  "appPath": "src/main/frontend",
+  "moduleName": "jiraWallboardApp"
+}

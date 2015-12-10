@@ -1,0 +1,72 @@
+{
+  "self": "http://localhost.8080/rest/agile/1.0/board/1/configuration",
+  "filter": {
+    "id": "11620",
+    "self": "http://localhost.8080/rest/api/2/filter/11620"
+  },
+  "columnConfig": {
+    "columns": [
+      {
+        "name": "To Do",
+        "statuses": [
+          {
+            "id": "1",
+            "self": "http://localhost.8080/rest/api/2/status/1"
+          },
+          {
+            "id": "4",
+            "self": "http://localhost.8080/rest/api/2/status/4"
+          }
+        ]
+      },
+      {
+        "name": "In Progress",
+        "statuses": [
+          {
+            "id": "3",
+            "self": "http://localhost.8080/rest/api/2/status/3"
+          },
+          {
+            "id": "10000",
+            "self": "http://localhost.8080/rest/api/2/status/10000"
+          }
+        ],
+        "max": 6
+      },
+      {
+        "name": "In Review",
+        "statuses": [
+          {
+            "id": "10008",
+            "self": "http://localhost.8080/rest/api/2/status/10008"
+          }
+        ],
+        "max": 3
+      },
+      {
+        "name": "Done",
+        "statuses": [
+          {
+            "id": "5",
+            "self": "http://localhost.8080/rest/api/2/status/5"
+          },
+          {
+            "id": "6",
+            "self": "http://localhost.8080/rest/api/2/status/6"
+          }
+        ]
+      }
+    ],
+    "constraintType": "issueCount"
+  },
+  "estimation": {
+    "type": "field",
+    "field": {
+      "fieldId": "customfield_10043",
+      "displayName": "Story Points"
+    }
+  },
+  "ranking": {
+    "rankCustomFieldId": 10646
+  }
+}

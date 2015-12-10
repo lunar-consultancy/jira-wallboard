@@ -1,0 +1,25 @@
+{
+  "maxResults": 50,
+  "startAt": 0,
+  "isLast": true,
+  "values": [
+    {
+      "id": 1,
+      "self": "http://localhost:8080/rest/agile/1.0/board/1",
+      "name": "Team A",
+      "type": "scrum"
+    },
+    {
+      "id": 2,
+      "self": "http://localhost:8080/rest/agile/1.0/board/2",
+      "name": "Team B",
+      "type": "scrum"
+    },
+    {
+      "id": 3,
+      "self": "http://localhost:8080/rest/agile/1.0/board/3",
+      "name": "Team C",
+      "type": "scrum"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "expand": "schema,names",
+  "issues": [
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "3",
+      "self": "http://localhost:8080/rest/agile/1.0/issue/3",
+      "key": "PRODUCT-3",
+      "fields": {
+        "issuetype": {
+          "self": "http://localhost:8080/rest/api/2/issuetype/3",
+          "id": "3",
+          "description": "A task that needs to be done.",
+          "iconUrl": "http://localhost:8080/images/icons/issuetypes/task.png",
+          "name": "Task",
+          "subtask": false
+        },
+        "timespent": null,
+        "sprint": null,
+        "project": {
+          "self": "http://localhost:8080/rest/api/2/project/1",
+          "id": "1",
+          "key": "PRODUCT",
+          "name": "Product",
+          "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/projectavatar?pid=1&avatarId=1",
+            "24x24": "http://localhost:8080/secure/projectavatar?size=small&pid=1&avatarId=1",
+            "16x16": "http://localhost:8080/secure/projectavatar?size=xsmall&pid=1&avatarId=1",
+            "32x32": "http://localhost:8080/secure/projectavatar?size=medium&pid=1&avatarId=1"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "lastViewed": null,
+        "watches": {
+          "self": "http://localhost:8080/rest/api/2/issue/PRODUCT-3/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "created": null,
+        "customfield_10140": null,
+        "epic": null,
+        "priority": {
+          "self": "http://localhost:8080/rest/api/2/priority/6",
+          "iconUrl": "http://localhost:8080/images/icons/undefined.gif",
+          "name": "Not yet prioritized",
+          "id": "6"
+        },
+        "customfield_10540": null,
+        "customfield_10740": null,
+        "labels": [
+          "Label"
+        ],
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": null,
+        "updated": null,
+        "status": {
+          "self": "http://localhost:8080/rest/api/2/status/1",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://localhost:8080/images/icons/statuses/open.png",
+          "name": "Open",
+          "id": "1",
+          "statusCategory": {
+            "self": "http://localhost:8080/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": "",
+        "timetracking": {},
+        "customfield_10006": null,
+        "customfield_10646": "0|hzzzp7:",
+        "attachment": [],
+        "aggregatetimeestimate": null,
+        "flagged": false,
+        "summary": "Next Task 3",
+        "creator": {
+          "self": "http://localhost:8080/rest/api/2/user?username=user",
+          "name": "user",
+          "key": "user",
+          "emailAddress": "user@domain.com",
+          "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?ownerId=user&avatarId=1",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&ownerId=user&avatarId=1",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&ownerId=user&avatarId=1",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&ownerId=user&avatarId=1"
+          },
+          "displayName": "User",
+          "active": true,
+          "timeZone": "Europe/Amsterdam"
+        },
+        "subtasks": [],
+        "customfield_10040": null,
+        "customfield_10041": null,
+        "customfield_10043": null,
+        "reporter": {
+          "self": "http://localhost:8080/rest/api/2/user?username=user",
+          "name": "user",
+          "key": "user",
+          "emailAddress": "user@domain.com",
+          "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?ownerId=user&avatarId=1",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&ownerId=user&avatarId=1",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&ownerId=user&avatarId=1",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&ownerId=user&avatarId=1"
+          },
+          "displayName": "User",
+          "active": true,
+          "timeZone": "Europe/Amsterdam"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10641": [],
+        "customfield_10642": null,
+        "environment": null,
+        "duedate": null,
+        "closedSprints": [],
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "comment": {
+          "startAt": 0,
+          "maxResults": 0,
+          "total": 0,
+          "comments": []
+        },
+        "votes": {
+          "self": "http://localhost:8080/rest/api/2/issue/PRODUCT-3/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "worklog": {
+          "startAt": 0,
+          "maxResults": 20,
+          "total": 0,
+          "worklogs": []
+        }
+      }
+    }
+  ]
+}

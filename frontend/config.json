@@ -1,0 +1,30 @@
+{
+  "API_URL": "/rest/agile/1.0",
+  "REFRESH_INTERVAL": 60000,
+  "TIME_WIP": 30000,
+  "TIME_OVERVIEW": 15000,
+  "STATUS_TO_DO": [
+    "To Do",
+    "Open"
+  ],
+  "STATUS_IN_PROGRESS": [
+    "In Progress",
+    "In Review",
+    "On Hold"
+  ],
+  "STATUS_DONE": [
+    "Done",
+    "Resolved"
+  ],
+  "STATUS_ON_HOLD": [
+    "On Hold"
+  ],
+  "STATUS_BLOCKER": "Blocker",
+  "BUG_TYPES": [
+    "Bug",
+    "Major"
+  ],
+  "USERNAME": "<fill-me>",
+  "PASSWORD": "<fill-me>",
+  "ELLIPSIS": 70
+}
