@@ -208,7 +208,7 @@ angular.module('jiraWallboardApp')
 
         var calculateTimeMetrics = function () {
             var totalDays = moment($scope.activeSprint.endDate).businessDiff(moment($scope.activeSprint.startDate));
-            $scope.daysRemaining = moment($scope.activeSprint.endDate).businessDiff(moment()) - 1;
+            $scope.daysRemaining = Math.round(moment($scope.activeSprint.endDate).businessDiff(moment()));
 
             var totalMinutes = totalDays * 24 * 60;
 
