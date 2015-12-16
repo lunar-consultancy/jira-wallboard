@@ -22,6 +22,18 @@
   order: $val;
 }
 
+@mixin dontBreakOut() {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -396,6 +408,7 @@ body {
 
       .title {
         width: 100%;
+        @include dontBreakOut();
       }
 
       .highlights {
