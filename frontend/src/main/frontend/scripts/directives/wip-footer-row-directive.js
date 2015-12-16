@@ -21,10 +21,10 @@ angular.module('jiraWallboardApp')
             '      <div class="header" ng-class="getOnHoldCount() > 0 ? \'warning\' : \'\'"><span class="total">{{getOnHoldCount() || 0}}</span><span class="title">On Hold</span></div>' +
             '    </div>' +
             '    <div class="col" style="width: 25%">' +
-            '      <div class="header"><span class="total">{{getNextCount() || 0}}</span><span class="title">Next</span></div>' +
+            '      <div class="header" ng-class="getNextCount() > 0 ? \'info\' : \'\'"><span class="total">{{getNextCount() || 0}}</span><span class="title">Next</span></div>' +
             '    </div>' +
             '    <div class="col" style="width: 25%">' +
-            '      <div class="header"><span class="total">{{getUnplannedCount() || 0}}</span><span class="title">Unplanned</span></div>' +
+            '      <div class="header" ng-class="getUnplannedCount() > 0 ? \'info\' : \'\'"><span class="total">{{getUnplannedCount() || 0}}</span><span class="title">Unplanned</span></div>' +
             '    </div>' +
             '    <div class="lane">' +
             '      <div class="lane-col" style="width:25%">' +
