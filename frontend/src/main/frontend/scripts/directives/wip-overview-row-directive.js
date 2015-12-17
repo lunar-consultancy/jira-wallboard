@@ -26,7 +26,7 @@ angular.module('jiraWallboardApp')
             '              </div>' +
             '              <div class="lane">' +
             '                <div class="lane-col" ng-repeat="column in columns" style="width: {{columnWidth}}%">' +
-            '                  <div class="lane-col-content"><item-bug ng-repeat="bug in issues | bugs | status:column.statuses"></item-bug><item-story ng-repeat="story in issues | stories | status:column.statuses"></item-story></div>' +
+            '                  <div class="lane-col-content"><item-story ng-repeat="story in issues | stories | status:column.statuses"></item-story><item-bug ng-repeat="bug in issues | bugs | status:column.statuses"></item-bug></div>' +
             '                </div>' +
             '              </div>' +
             '            </div>' +
