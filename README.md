@@ -4,8 +4,22 @@ Jira Wallboard is a wallboard, build with [AngularJS](https://angularjs.org), to
 
 ## Features
 
-* WIP
+* Work in progres view for team with:
+** Speedlane for bugs
+** Lane per story tasks
+** Other lane for other tasks
+* Work in progres view for Product Owner with:
+** Stories
+** Bugs
+* Overview footer
+** Impediments (issues flagged in Jira)
+** On Hold (issues with status On Hold (configurable))
+** Next (tasks in next sprint)
+** Unplanned (tasks on backlog)
+* Sprint overview
+** Blocking issues, Time Elapsed, Work complete (calculation on story points), Days remaining in Sprint, Story points bar 
 * Burndown
+* Ability to pause flipping team/PO views
 
 ## Requirements
 
