@@ -69,7 +69,7 @@ git clone https://github.com/lunar-consultancy/jira-wallboard.git
 ### Configuration
 
 * Review jira-wallboard/frontend/config.json and set at least USERNAME and PASSWORD of your (dedicated wallboard) Jira account.
-* Review jira-wallboard/frontend/config-production.json and et the Jira URL and your board name.  
+* Review jira-wallboard/frontend/config-production.json and set the Jira URL and your board name.  
 
 ### Build
 
