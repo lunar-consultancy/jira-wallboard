@@ -31,7 +31,6 @@ Jira Wallboard is a wallboard, build with [AngularJS](https://angularjs.org), to
 * [Git](https://git-scm.com/)
 * [Java SDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 * [Maven](https://maven.apache.org)
-* Gems
 
 ## Setup a Raspberry PI 2
 
