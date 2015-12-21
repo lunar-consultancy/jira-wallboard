@@ -215,7 +215,11 @@ angular.module('jiraWallboardApp')
             var now = moment();
             var minutes = now.minute() + now.hour() * 60;
 
-            $scope.timeElapsed = Math.round(100 - ($scope.daysRemaining * 24 * 60 + minutes) * 100 / totalMinutes);
+            var timeElapsed = Math.round(100 - ($scope.daysRemaining * 24 * 60 + minutes) * 100 / totalMinutes);
+            if (timeElapsed < 0) {
+                timeElapsed = 0;
+            }
+            $scope.timeElapsed = timeElapsed;
         };
 
         var calculateStoryPoints = function () {
