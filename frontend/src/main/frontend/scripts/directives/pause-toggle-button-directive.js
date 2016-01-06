@@ -13,7 +13,7 @@ angular.module('jiraWallboardApp')
             restrict: 'E',
             replace: true,
             template: '<div class="toggle-button">' +
-            '<a ng-click="settings.pauseToggle = !settings.pauseToggle"><img ng-src="images/{{settings.pauseToggle ? \'play\' : \'pause\'}}.png"  /></a>' +
+            '<a ng-click="pause()"><img ng-src="images/{{settings.pauseToggle ? \'play\' : \'pause\'}}.png"  /></a>' +
             '</div>'
         };
     }]);

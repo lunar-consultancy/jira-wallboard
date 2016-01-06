@@ -12,7 +12,7 @@
 angular.module('jiraWallboardApp')
     .controller('jiraWallboardCtrl', ['$scope', '$interval', '$timeout', '$filter', '$cookies', 'config', 'jsonService', 'issueService', 'moment', function ($scope, $interval, $timeout, $filter, $cookies, config, jsonService, issueService, moment) {
 
-        var toggleTimeout, refreshInterval;
+        var toggleTimeout, refreshInterval, pauseTimeout;
 
         /**
          * @type {string}
@@ -77,6 +77,18 @@ angular.module('jiraWallboardApp')
             $scope.settings.showOverview = !$scope.settings.showOverview;
         };
 
+        var pause = function () {
+            $timeout.cancel(pauseTimeout);
+            $scope.settings.pauseToggle = !$scope.settings.pauseToggle;
+            if ($scope.settings.pauseToggle) {
+                pauseTimeout = $timeout(pause, config.TIME_PAUSE);
+            }
+        };
+
+        $scope.pause = function () {
+            pause();
+        };
+
         var toggle = function () {
             if (!$scope.settings.pauseToggle) {
                 $scope.toggle();
@@ -95,12 +107,16 @@ angular.module('jiraWallboardApp')
 
         $scope.$on('$destroy', function () {
             if (angular.isDefined(toggleTimeout)) {
-                $interval.cancel(toggleTimeout);
+                $timeout.cancel(toggleTimeout);
                 toggleTimeout = undefined;
             }
             if (angular.isDefined(refreshInterval)) {
                 $interval.cancel(refreshInterval);
                 refreshInterval = undefined;
+            }
+            if (angular.isDefined(pauseTimeout)) {
+                $timeout.cancel(pauseTimeout);
+                pauseTimeout = undefined;
             }
         });
 

@@ -3,6 +3,7 @@
   "REFRESH_INTERVAL": 60000,
   "TIME_WIP": 30000,
   "TIME_OVERVIEW": 15000,
+  "TIME_PAUSE": 900000,
   "STATUS_TO_DO": [
     "To Do",
     "Open"
